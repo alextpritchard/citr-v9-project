@@ -1,4 +1,3 @@
-import React from "react";
 import { createRoot } from "react-dom/client";
 
 import Pizza from "./Pizza.jsx";
@@ -6,7 +5,7 @@ import Pizza from "./Pizza.jsx";
 const App = () => {
   return (
     <div>
-      <h1>Padre Gino's</h1>
+      <h1>Padre Gino's - Order now</h1>
       <Pizza name="Margherita" description="Tomato, mozzarella, and basil" />
       <Pizza name="Pepperoni" description="Tomato, mozzarella, and pepperoni" />
       <Pizza
