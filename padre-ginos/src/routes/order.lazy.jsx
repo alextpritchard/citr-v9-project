@@ -9,7 +9,7 @@ const intl = new Intl.NumberFormat("en-US", {
   minimumFractionDigits: 2,
 });
 
-export default function Order() {
+export default function OrderLazy() {
   const [pizzaTypes, setPizzaTypes] = useState([]);
   const [loading, setLoading] = useState(true);
 
