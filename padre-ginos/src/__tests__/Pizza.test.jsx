@@ -1,5 +1,7 @@
-import { render } from "@testing-library/react";
-import { expect, test } from "vitest";
+import { render, cleanup } from "@testing-library/react"; // add cleanup
+import { afterEach, expect, test } from "vitest"; // add afterEach
+afterEach(cleanup);
+
 import Pizza from "../Pizza";
 
 test("alt text renders on image", async () => {
