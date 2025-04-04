@@ -15,3 +15,12 @@ test("alt text renders on image", async () => {
   expect(img.src).toBe(src);
   expect(img.alt).toBe(name);
 });
+
+test("to have default image if none is provided", async () => {
+  const screen = render(
+    <Pizza name={"Cool Pizza"} description="super cool pizza" />,
+  );
+
+  const img = screen.getByRole("img");
+  expect(img.src).not.toBe("");
+});
