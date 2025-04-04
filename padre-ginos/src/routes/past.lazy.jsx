@@ -5,12 +5,23 @@ import getPastOrders from "../api/getPastOrders";
 import getPastOrder from "../api/getPastOrder";
 import Modal from "../Modal.jsx";
 import { priceConverter } from "../useCurrency.jsx";
+import ErrorBoundary from "../ErrorBoundary.jsx";
 
 export const Route = createLazyFileRoute("/past")({
-  component: PastOrdersRoute,
+  component: ErrorBoundaryWrappedPastOrderRoutes,
 });
 
+function ErrorBoundaryWrappedPastOrderRoutes() {
+  return (
+    <ErrorBoundary>
+      <PastOrdersRoute />
+    </ErrorBoundary>
+  );
+}
+
 function PastOrdersRoute() {
+  // throw new Error("This is a test error");
+
   const [page, setPage] = useState(1);
   const [focusedOrder, setFocusedOrder] = useState(null);
 
