@@ -10,7 +10,8 @@
     "lint": "eslint",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "test:browser": "vitest --project=browser"
   },
   "keywords": [],
   "type": "module",
