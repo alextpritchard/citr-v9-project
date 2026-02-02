@@ -16,7 +16,7 @@
   "description": "The Complete Intro to React v9, as taught by Brian Holt for Frontend Masters",
   "devDependencies": {
     "@vitejs/plugin-react": "4.3.1",
-    "eslint": "9.9.1",
+    "eslint": "9.26.0",
     "eslint-config-prettier": "9.1.0",
     "globals": "15.9.0",
     "prettier": "3.3.3",
